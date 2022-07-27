@@ -18,5 +18,5 @@ Multi-omics analysis of human mesenchymal stem cell reveals cell aging determini
     -Data used for integrative analysis of BM and UC MSC on tanscriptome and proteome level
     -Result of 2D Perseus analysis
     
-"code" folder contains R codes showing single cell data preprocessing and filtering steps 
+"code" folder contains R and python codes showing major data preprocessing and filtering steps 
     
