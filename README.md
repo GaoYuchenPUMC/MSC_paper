@@ -2,7 +2,7 @@
 
 This repository contains raw data and analysis R codes for manuscript (in progress): 
 
-Multi-omics analysis of human mesenchymal stem cell guided a perinatal MSCs based cellular therapy for splenectomy non-responsive refractory immune thrombocytopenia: a phase I trial
+Multi-omics analysis of human mesenchymal stem cell reveals cell aging determining their immunomodulatory activity through the downregulation of PD-L1 (in progress)
 
 "10X_MSC" folder contains following:
     
