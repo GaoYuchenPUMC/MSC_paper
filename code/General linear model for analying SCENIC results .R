@@ -1,6 +1,6 @@
 
 ## Read SCENIC AUC results and correct barcodes ##
-MSC=
+MSC=readRDS('/data/MSC.rds')
 library(stringr)
 AUC=read.csv('F:/AUC_eachCell.csv')
 meta=MSC@meta.data
@@ -35,7 +35,7 @@ row.names(meta)=c(ADbarcode1,ADbarcode2,ADbarcode3,BMbarcode1,BMbarcode2,BMbarco
                   PMbarcode1,PMbarcode2,PMbarcode3,UCbarcode1,UCbarcode2,UCbarcode3)
 
 
-##¢ÙCluster 123 vs Other
+##Cluster 123 vs Other
 meta_S123vsOther=read.csv('meta_for_GLM_S123vsOther.csv',row.names = 'barcode')
 AUC_S123vsOther=AUC[,as.vector(row.names(meta_S123vsOther))]
 AUC_S123vsOther=cbind(t(AUC_S123vsOther),meta_S123vsOther$S123vsOther)
@@ -60,7 +60,7 @@ for(i in c(2:348)){
 write.csv(t(compare_t_mat),'F:/S123_vs_other.csv')
 rm(AUC_S123vsOther,meta_S123vsOther,compare_t_list,compare_t_mat)
 
-##¢ÚCluster 4 vs 123
+##Cluster 4 vs 123
 meta_S4vsS123=read.csv('F:/meta_for_GLM_S4vsS123.csv',row.names = 'barcode')
 AUC_S4vsS123=AUC[,as.vector(row.names(meta_S4vsS123))]
 AUC_S4vsS123=cbind(t(AUC_S4vsS123),meta_S4vsS123$S4vsS123)
@@ -85,7 +85,7 @@ for(i in c(2:348)){
 write.csv(t(compare_t_mat),'F:/S4_vs_S123.csv')
 rm(AUC_S4vsS123,meta_S4vsS123,compare_t_list,compare_t_mat)
 
-##¢ÛCluster 5 vs 4
+##Cluster 5 vs 4
 meta_S5vsS4=read.csv('F:/meta_for_GLM_S5vsS4.csv',row.names = 'barcode')
 AUC_S5vsS4=AUC[,as.vector(row.names(meta_S5vsS4))]
 AUC_S5vsS4=cbind(t(AUC_S5vsS4),meta_S5vsS4$S5vsS4)
@@ -110,7 +110,7 @@ for(i in c(2:348)){
 write.csv(t(compare_t_mat),'F:/S5_vs_S4.csv')
 rm(AUC_S5vsS4,meta_S5vsS4,compare_t_list,compare_t_mat)
 
-##¢ÛCluster 6 vs 4
+##Cluster 6 vs 4
 meta_S6vsS4=read.csv('F:/meta_for_GLM_S6vsS4.csv',row.names = 'barcode')
 AUC_S6vsS4=AUC[,as.vector(row.names(meta_S6vsS4))]
 AUC_S6vsS4=cbind(t(AUC_S6vsS4),meta_S6vsS4$S6vsS4)
@@ -135,7 +135,7 @@ for(i in c(2:348)){
 write.csv(t(compare_t_mat),'F:/S6_vs_S4.csv')
 rm(AUC_S6vsS4,meta_S6vsS4,compare_t_list,compare_t_mat)
 
-##¢ÛCluster 7 vs 4
+##Cluster 7 vs 4
 meta_S7vsS4=read.csv('F:/meta_for_GLM_S7vsS4.csv',row.names = 'barcode')
 AUC_S7vsS4=AUC[,as.vector(row.names(meta_S7vsS4))]
 AUC_S7vsS4=cbind(t(AUC_S7vsS4),meta_S7vsS4$S7vsS4)
