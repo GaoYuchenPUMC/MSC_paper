@@ -103,7 +103,7 @@ colnames(pseudobulk_MSC)=c('C1_AD1','C1_AD2','C1_AD3','C1_BM1','C1_BM2','C1_BM3'
                            'C5_AD1','C5_AD2','C5_AD3','C5_BM1','C5_BM2','C5_BM3','C5_PM1','C5_PM2','C5_PM3','C5_UC1','C5_UC2','C5_UC3',
                            'C6_AD1','C6_AD2','C6_AD3','C6_BM1','C6_BM2','C6_BM3','C6_PM1','C6_PM2','C6_PM3','C6_UC1','C6_UC2','C6_UC3',
                            'C7_AD1','C7_AD2','C7_AD3','C7_BM1','C7_BM2','C7_BM3','C7_PM1','C7_PM2','C7_PM3','C7_UC1','C7_UC2','C7_UC3')
-write.csv(pseudobulk_MSC,'C:/Users/admin/Desktop/Manuscript for NM/20220826 NC revision/???? ???Ų???/Differential analysis/psudobulk_subcluster_forDeseq2.csv')
+write.csv(pseudobulk_MSC,'C:/Users/admin/Desktop/Manuscript for NM/20220826 NC revision/Differential analysis/psudobulk_subcluster_forDeseq2.csv')
 
 design=read.csv('/data/gaoyuchen/NC_Revision/Reviewer2_CellCycle_Parts/Design_cluster.csv',row.names = 'symbol')
 
